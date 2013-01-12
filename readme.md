@@ -30,6 +30,7 @@ Let's PSR-0 load this instead, so we can have our directory structure represent 
 
 Now `dump-autoload` just once more. Now composer knows that namespaces map up to a directory structure in the source folder, it can 'guess' where the file is supposed to be so there's no need for a map. I have created a new directory structure to handle these changes :
 
+```
 /app
 	/src
 		/Example
@@ -38,6 +39,7 @@ Now `dump-autoload` just once more. Now composer knows that namespaces map up to
 			/Migration
 			/Model
 			/Test
+```
 
 As you can see, we now have a directory for each of the 'class' type resources in our application. I have moved the files from the default Laravel folders across and deleted the old locations (also removed them from composer.json).
 
